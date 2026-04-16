@@ -7,7 +7,6 @@ class GeocachingUI:
         self.root = root
         self.root.title("Geocaching Difficulty Calculator")
         self.root.geometry("450x500")
-
         self.logic = GeocachingPredictor()
         self.create_widgets()
 
@@ -61,7 +60,7 @@ class GeocachingUI:
         self.chk_puzzle = ttk.Checkbutton(main_frame, text="Puzzle / Challenge (vyžaduje luštění)", variable=self.puzzle_var)
         self.chk_puzzle.grid(row=7, column=0, columnspan=2, pady=5, sticky="w")
 
-        # 6. Tlačítko a výsledek
+        # 6. Tlačítko pro výpočet a výsledek
         self.btn_predict = ttk.Button(main_frame, text="Vypočítat odhad", command=self.handle_prediction)
         self.btn_predict.grid(row=8, column=0, columnspan=2, pady=20)
 
