@@ -96,7 +96,6 @@ class GeocachingUI:
         except Exception as e:
             messagebox.showerror("Chyba výpočtu", f"Zkontrolujte zadání. Detail: {str(e)}")
 
-
 if __name__ == "__main__":
     root = tk.Tk()
     app = GeocachingUI(root)
