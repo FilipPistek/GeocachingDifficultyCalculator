@@ -69,8 +69,6 @@ class GeocachingUI:
         self.result_label = ttk.Label(main_frame, text="Předpokládaná obtížnost: ---", font=('Arial', 12, 'bold'), foreground="blue")
         self.result_label.grid(row=9, column=0, columnspan=2)
 
-    # --- FUNKCE PRO HLÍDÁNÍ LOGIKY UŽIVATELE ---
-
     def check_logic_terrain(self, event=None):
         if float(self.terrain_scale.get()) > 1.5:
             self.drive_in_var.set(False)
