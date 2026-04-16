@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from logic import GeocachingPredictor
 
-
 class GeocachingUI:
     def __init__(self, root):
         self.root = root
